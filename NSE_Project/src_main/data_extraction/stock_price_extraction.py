@@ -6,7 +6,8 @@ import yfinance as yf
 class StockPriceExtraction(CommonParameters):
 
     def __init__(self,stock_object,company):
-        super().__init__(stock_object,company)
+        super().__init__(stock_object)
+        self.company=company
 
     def getPriceHistory(self):
         historical_price_data = self.stock_object.history(period="1d", start="2021-01-01").reset_index()

@@ -3,7 +3,8 @@ from common_parameters import CommonParameters
 class ShareHoldersExtraction(CommonParameters):
 
     def __init__(self,stock_object,company):
-        super().__init__(stock_object,company)	
+        super().__init__(stock_object)	
+        self.Company=company
 
     def getMajorHolders(self):
         major_holders = self.stock_object.major_holders
