@@ -7,7 +7,7 @@ class BalanceSheetExtraction(CommonParameters):
 
     def getBalanceSheetYearly(self):
         balance_sheet_yearly = self.stock_object.balance_sheet
-        balance_sheet_yearly['ticker'] =  self.company
+        # balance_sheet_yearly['ticker'] =  self.company
 
         return balance_sheet_yearly
 
